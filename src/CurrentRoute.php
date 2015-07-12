@@ -26,7 +26,7 @@ class CurrentRoute {
 
 		if (is_null($name)) {
 			$uri = head($route->methods()) . ' /' . $route->uri();
-			throw new Exception("The current route ($uri) is not named - please check routes.php for an \"as\" parameter");
+			// throw new Exception("The current route ($uri) is not named - please check routes.php for an \"as\" parameter");
 		}
 
 		$params = array_values($route->parameters());
